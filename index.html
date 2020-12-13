@@ -38,12 +38,80 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="/index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/register.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/register.html">Register</a>
-                    </li>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                        Login
+                    </button>
+                    <div class="modal fade" id="loginModal">
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-fluid">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 d-flex justify-content-center">Login</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="mb-1">
+                                                <label class="form-label">Email
+                                                    address</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="name@example.com">
+                                                <label class="form-label">Password</label>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Go
+                                        Back</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
+                        Register
+                    </button>
+                    <div class="modal fade" id="registerModal">
+                        <!-- Change class .modal-sm to change the size of the modal -->
+                        <div class="modal-dialog modal-fluid">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 d-flex justify-content-center">Please
+                                        fill out information below</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="mb-1">
+                                                <label class="form-label">Email
+                                                    address</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                                    placeholder="name@example.com">
+                                                <label class="form-label">Password</label>
+                                                <input type="email" class="form-control">
+                                                <label class="form-label">Repeat Password</label>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Go
+                                        Back</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -62,21 +130,67 @@
 
 
     <div class="container d-flex justify-content-center">
-        <div class="front-page shadow container">
-            <h1 class="d-flex justify-content-center pt-3">About</h1>
+        <div class="front-page shadow container" style="background-color: rgb(119, 156, 150);">
+            <h1 class="d-flex justify-content-center pt-3 text-white">About</h1>
             <div class="row">
-                <div class="col flex-column">
+                <div class="col flex-column shadow mx-2 border border-dark rounded bg-light">
                     <h3 class="d-flex justify-content-center">Our Purpose</h3>
-                    <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, tempore odio officiis dignissimos nam ducimus corrupti sit quasi illum, fugit, repellendus quo ut facere veniam reprehenderit ex minima eum ullam.</p>
+                    <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, tempore odio officiis
+                        dignissimos nam ducimus corrupti sit quasi illum, fugit, repellendus quo ut facere veniam
+                        reprehenderit ex minima eum ullam.</p>
                 </div>
-                <div class="col flex-column">
+                <div class="col flex-column shadow mx-2 border border-dark rounded bg-light">
                     <h3 class="d-flex justify-content-center">How to Support Us</h3>
-                    <p class="px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorum, cupiditate at, reprehenderit consequatur fuga magnam voluptatem nisi corrupti est atque commodi assumenda esse exercitationem, suscipit reiciendis placeat ipsam ab.</p>
+                    <p class="px-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorum, cupiditate
+                        at, reprehenderit consequatur fuga magnam voluptatem nisi corrupti est atque commodi assumenda
+                        esse exercitationem, suscipit reiciendis placeat ipsam ab.</p>
                 </div>
-                
+            </div>
+            <div class="row pt-5">
+                <div class="col p-3">
+                    <div class="card">
+                        <div class="card-body shadow ">
+                            <h5>Loakre nodv sdjsdno</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam culpa possimus quos at eveniet id inventore neque sequi nam. Aliquam quam similique ipsam unde vero animi ad nemo, hic possimus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card">
+                        <div class="card-body shadow">
+                            <h5>Loakre nodv sdjsdno</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam culpa possimus quos at eveniet id inventore neque sequi nam. Aliquam quam similique ipsam unde vero animi ad nemo, hic possimus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 d-none d-md-block"></div>
+
+                <div class="col p-3">
+                    <div class="card">
+                        <div class="card-body shadow">
+                            <h5>Creators</h5>
+                            <ul class="d-flex justify-content-around" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                                <li>Tom Hanks</li>
+                                <li> Joe Mama</li>
+                                <li> Afar Zeuqzav</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-3">
+                    <div class="card">
+                        <div class="card-body shadow">
+                            <h5>Loakre nodv sdjsdno</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam culpa possimus quos at eveniet id inventore neque sequi nam. Aliquam quam similique ipsam unde vero animi ad nemo, hic possimus.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
 
 
 
